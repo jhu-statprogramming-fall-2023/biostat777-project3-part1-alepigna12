@@ -38,3 +38,6 @@ revdep/
 Rplots.pdf
 R/scaleX.R
 
+^_pkgdown\.yml$
+^docs$
+^pkgdown$

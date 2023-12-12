@@ -1,6 +1,13 @@
 lme4: Mixed-effects models in R.
 ====
 
+## Assignment
+### Link to original Repository
+[lme4 link](https://github.com/lme4/lme4)
+
+### Link to website repository
+[Public Repository with website](https://github.com/jhu-statprogramming-fall-2023/biostat777-project3-part1-alepigna12)
+
 <!-- badges: start -->
 [![R-CMD-check](https://github.com/lme4/lme4/workflows/R-CMD-check/badge.svg)](https://github.com/lme4/lme4/actions)
 [![cran version](http://www.r-pkg.org/badges/version/lme4)](https://cran.r-project.org/package=lme4)
