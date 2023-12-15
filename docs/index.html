@@ -12,7 +12,10 @@
 <title>Linear Mixed-Effects Models using Eigen and S4 • lme4</title>
 <script src="deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <link href="deps/bootstrap-5.2.2/bootstrap.min.css" rel="stylesheet">
-<script src="deps/bootstrap-5.2.2/bootstrap.bundle.min.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
+<script src="deps/bootstrap-5.2.2/bootstrap.bundle.min.js"></script><link href="deps/Roboto-0.4.5/font.css" rel="stylesheet">
+<link href="deps/JetBrains_Mono-0.4.5/font.css" rel="stylesheet">
+<link href="deps/Roboto_Slab-0.4.5/font.css" rel="stylesheet">
+<!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous">
 <!-- bootstrap-toc --><script src="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@v1.0.1/dist/bootstrap-toc.min.js" integrity="sha256-4veVQbu7//Lk5TSmc7YV48MxtMy98e26cf5MrgZYnwo=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- search --><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- pkgdown --><script src="pkgdown.js"></script><meta property="og:title" content="Linear Mixed-Effects Models using Eigen and S4">
 <meta property="og:description" content='Fit linear and generalized linear mixed-effects models.
@@ -47,6 +50,7 @@
 <li class="nav-item dropdown">
   <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" id="dropdown-articles">Articles</a>
   <div class="dropdown-menu" aria-labelledby="dropdown-articles">
+    <a class="dropdown-item" href="articles/exampleanalysis.html">Example Analysis</a>
     <a class="dropdown-item" href="articles/lmerperf.html">lme4 performance tips</a>
   </div>
 </li>
@@ -72,8 +76,196 @@
   <main id="main" class="col-md-9"><div class="section level1">
 <div class="page-header"><h1 id="lme4-mixed-effects-models-in-r">lme4: Mixed-effects models in R.<a class="anchor" aria-label="anchor" href="#lme4-mixed-effects-models-in-r"></a>
 </h1></div>
+<div class="section level2">
+<h2 id="assignment">Assignment<a class="anchor" aria-label="anchor" href="#assignment"></a>
+</h2>
+<div class="section level3">
+<h3 id="link-to-original-repository">Link to original Repository<a class="anchor" aria-label="anchor" href="#link-to-original-repository"></a>
+</h3>
+<p><a href="https://github.com/lme4/lme4" class="external-link">lme4 link</a></p>
+</div>
+<div class="section level3">
+<h3 id="link-to-website-repository">Link to website repository<a class="anchor" aria-label="anchor" href="#link-to-website-repository"></a>
+</h3>
+<p><a href="https://github.com/jhu-statprogramming-fall-2023/biostat777-project3-part1-alepigna12" class="external-link">Public Repository with website</a></p>
+</div>
+<div class="section level3">
+<h3 id="id_5-edits">5 edits:<a class="anchor" aria-label="anchor" href="#id_5-edits"></a>
+</h3>
+<ul>
+<li><p>Base font</p></li>
+<li><p>Heading font</p></li>
+<li><p>Code font</p></li>
+<li><p>Background color</p></li>
+<li><p>Foreground color</p></li>
+</ul>
+</div>
+<div class="section level3">
+<h3 id="package-name">Package Name<a class="anchor" aria-label="anchor" href="#package-name"></a>
+</h3>
+<p>lme4: Mixed-effects models in R.</p>
+</div>
+<div class="section level3">
+<h3 id="authors">Authors<a class="anchor" aria-label="anchor" href="#authors"></a>
+</h3>
+<ul>
+<li><p>Douglas Bates: Author.</p></li>
+<li><p>Martin Maechler: Author.</p></li>
+<li><p>Ben Bolker: Author, maintainer.</p></li>
+<li><p>Steven Walker: Author.</p></li>
+<li><p>Rune Haubo Bojesen Christensen: Contributor.</p></li>
+<li><p>Henrik Singmann: Contributor.</p></li>
+<li><p>Bin Dai: Contributor.</p></li>
+<li><p>Fabian Scheipl: Contributor.</p></li>
+<li><p>Gabor Grothendieck: Contributor.</p></li>
+<li><p>Peter Green: Contributor.</p></li>
+<li><p>John Fox: Contributor.</p></li>
+<li><p>Alexander Bauer: Contributor.</p></li>
+<li><p>Pavel N. Krivitsky: Contributor, copyright holder. shared copyright on simulate.formula</p></li>
+<li><p>Emi Tanaka: Contributor.</p></li>
+</ul>
+</div>
+<div class="section level3">
+<h3 id="website-creator">Website Creator<a class="anchor" aria-label="anchor" href="#website-creator"></a>
+</h3>
+<p>Alessio Pignatelli (Did not write the package, authors are listed above)</p>
+</div>
+<div class="section level3">
+<h3 id="package-goal">Package Goal<a class="anchor" aria-label="anchor" href="#package-goal"></a>
+</h3>
+<p>Implementation of generalized linear mixed models (GLMMs) and nonlinear mixed models (NLMMs)</p>
+</div>
+<div class="section level3">
+<h3 id="alphabetical-list-of-functions">Alphabetical List of functions<a class="anchor" aria-label="anchor" href="#alphabetical-list-of-functions"></a>
+</h3>
+<ul>
+<li>allFit() - Refit a fitted model with all available optimizers</li>
+<li>Arabidopsis - Arabidopsis clipping/fertilization data</li>
+<li>bootMer() - Model-based (Semi-)Parametric Bootstrap for Mixed Models</li>
+<li>cake - Breakage Angle of Chocolate Cakes</li>
+<li>cbpp - Contagious bovine pleuropneumonia</li>
+<li>checkConv() - Extended Convergence Checking</li>
+<li>confint(<mermod>) confint(<thpr>) - Compute Confidence Intervals for Parameters of a [ng]lmer Fit</thpr></mermod>
+</li>
+<li>convergence Assessing Convergence for Fitted Models</li>
+<li>devcomp() - Extract the deviance component list</li>
+<li>devfun2() - Deviance Function in Terms of Standard Deviations/Correlations</li>
+<li>drop1(<mermod>) - Drop all possible single fixed-effect terms from a mixed effect model</mermod>
+</li>
+<li>dummy() - Dummy variables (experimental)</li>
+<li>Dyestuff Dyestuff2 - Yield of dyestuff by batch</li>
+<li>expandDoubleVerts() - Expand terms with ‘||’ notation into separate ‘|’ terms</li>
+<li>factorize() - Attempt to convert grouping variables to factors</li>
+<li>findbars() - Determine random-effects expressions from a formula</li>
+<li>fixef(<mermod>) - Extract fixed-effects estimates</mermod>
+</li>
+<li>fortify.merMod() getData(<mermod>) - add information to data based on a fitted model</mermod>
+</li>
+<li>getME() - Extract or Get Generalized Components from a Fitted Mixed Effects Model</li>
+<li>GHrule() - Univariate Gauss-Hermite quadrature rule</li>
+<li>glmer.nb() - Fitting Negative Binomial GLMMs</li>
+<li>glmer() - Fitting Generalized Linear Mixed-Effects Models</li>
+<li>glmerLaplaceHandle() - Handle for glmerLaplace</li>
+<li>glmFamily-class - Class “glmFamily” - a reference class for family</li>
+<li>glmFamily() - Generator object for the glmFamily class</li>
+<li>golden() - Class “golden” and Generator for Golden Search Optimizer Class</li>
+<li>GQdk() - GQN Sparse Gaussian / Gauss-Hermite Quadrature grid</li>
+<li>grouseticks - Data on red grouse ticks from Elston et al. 2001</li>
+<li>hatvalues(<mermod>) Diagonal elements of the hat matrix</mermod>
+</li>
+<li>influence(<mermod>) cooks.distance(&lt;influence.merMod&gt;) dfbeta(&lt;influence.merMod&gt;) dfbetas(&lt;influence.merMod&gt;) - Influence Diagnostics for Mixed-Effects Models</mermod>
+</li>
+<li>InstEval - University Lecture/Instructor Evaluations by Students at ETH</li>
+<li>isNested() - Is f1 nested within f2?</li>
+<li>isREML() isLMM() isNLMM() isGLMM() - Check characteristics of models</li>
+<li>isSingular() - Test Fitted Model for (Near) Singularity</li>
+<li>lme4 lme4-package - Linear, generalized linear, and nonlinear mixed models</li>
+<li>lme4_testlevel() - Detect testing level for lme4 examples and tests</li>
+<li>lmer() - Fit Linear Mixed-Effects Models</li>
+<li>lmerControl() glmerControl() nlmerControl() .makeCC() - Control of Mixed Model Fitting</li>
+<li>lmList() - Fit List of lm or glm Objects with a Common Model</li>
+<li>lmList4-class show,lmList4-method - Class “lmList4” of ‘lm’ Objects on Common Model</li>
+<li>glmResp-class lmerResp-class lmResp-class nlsResp-class - Reference Classes for Response Modules, “(lm|glm|nls|lmer)Resp”</li>
+<li>lmResp() - Generator objects for the response classes</li>
+<li>anova(<mermod>) as.function(<mermod>) coef(<mermod>) deviance(<mermod>) REMLcrit() extractAIC(<mermod>) family(<mermod>) formula(<mermod>) fitted(<mermod>) logLik(<mermod>) nobs(<mermod>) ngrps(<mermod>) terms(<mermod>) vcov(<mermod>) model.frame(<mermod>) model.matrix(<mermod>) print(<mermod>) summary(<mermod>) print(&lt;summary.merMod&gt;) update(<mermod>) weights(<mermod>) - Class “merMod” of Fitted Mixed-Effect Models</mermod></mermod></mermod></mermod></mermod></mermod></mermod></mermod></mermod></mermod></mermod></mermod></mermod></mermod></mermod></mermod></mermod></mermod></mermod>
+</li>
+<li>merPredD-class - Class “merPredD” - a Dense Predictor Reference Class</li>
+<li>merPredD() - Generator object for the merPredD class</li>
+<li>mkMerMod() - Create a ‘merMod’ Object</li>
+<li>mkRespMod() - Create an lmerResp, glmResp or nlsResp instance</li>
+<li>mkReTrms() mkNewReTrms() - Make Random Effect Terms: Create Z, Lambda, Lind, etc.</li>
+<li>mkParsTemplate() mkDataTemplate() - Make templates suitable for guiding mixed model simulations</li>
+<li>mkVarCorr() - Make Variance and Correlation Matrices from theta</li>
+<li>lFormula() mkLmerDevfun() optimizeLmer() glFormula() mkGlmerDevfun() optimizeGlmer() updateGlmerDevfun() - Modular Functions for Mixed Model Fits</li>
+<li>namedList() - Self-naming list function</li>
+<li>NelderMead() - Class “NelderMead” of Nelder-Mead optimizers and its Generator</li>
+<li>Nelder_Mead() - Nelder-Mead Optimization of Parameters, Possibly (Box) Constrained</li>
+<li>ngrps() - Number of Levels of a Factor or a “merMod” Model</li>
+<li>nlformula() - Manipulate a Nonlinear Model Formula</li>
+<li>nlmer() - Fitting Nonlinear Mixed-Effects Models</li>
+<li>nloptwrap() nlminbwrap() - Wrappers for additional optimizers</li>
+<li>nobars() - Omit terms separated by vertical bars in a formula</li>
+<li>Pastes - Paste strength by batch and cask</li>
+<li>Penicillin - Variation in penicillin testing</li>
+<li>plot(<mermod>) qqmath(<mermod>) - Diagnostic Plots for ‘merMod’ Fits</mermod></mermod>
+</li>
+<li>xyplot(<thpr>) densityplot(<thpr>) splom(<thpr>) - Mixed-Effects Profile Plots (Regular / Density / Pairs)</thpr></thpr></thpr>
+</li>
+<li>predict(<mermod>) - Predictions from a model at new data values</mermod>
+</li>
+<li>profile(<mermod>) as.data.frame(<thpr>) log(<thpr>) logProf() varianceProf() - Profile method for merMod objects</thpr></thpr></mermod>
+</li>
+<li>mcmcsamp pvalues - Getting p-values for fitted models</li>
+<li>ranef(<mermod>) dotplot(&lt;ranef.mer&gt;) qqmath(&lt;ranef.mer&gt;) as.data.frame(&lt;ranef.mer&gt;) - Extract the modes of the random effects</mermod>
+</li>
+<li>refit() - Refit a (merMod) Model with a Different Response</li>
+<li>refitML() - Refit a Model by Maximum Likelihood Criterion</li>
+<li>rePCA() - PCA of random-effects covariance matrix</li>
+<li>rePos-class - Class “rePos”</li>
+<li>rePos() - Generator object for the rePos (random-effects positions) class</li>
+<li>residuals(<mermod>) residuals(<lmresp>) residuals(<glmresp>) - residuals of merMod objects</glmresp></lmresp></mermod>
+</li>
+<li>sigma(<mermod>) - Extract Residual Standard Deviation ‘Sigma’</mermod>
+</li>
+<li>simulate(<formula>) - A simulate Method for formula objects that dispatches based on the Left-Hand Side</formula>
+</li>
+<li>simulate(<mermod>) .simulateFun() - Simulate Responses From merMod Object</mermod>
+</li>
+<li>sleepstudy - Reaction times in a sleep deprivation study</li>
+<li>subbars() “Sub[stitute] Bars”</li>
+<li>troubleshooting - Troubleshooting</li>
+<li>llikAIC() methTitle() .prt.methTit() .prt.family() .prt.resids() .prt.call() .prt.aictab() .prt.grps() .prt.warn() .prt.VC() formatVC() - Print and Summary Method Utilities for Mixed Effects</li>
+<li>VarCorr(<mermod>) as.data.frame(&lt;VarCorr.merMod&gt;) print(&lt;VarCorr.merMod&gt;) - Extract Variance and Correlation Components</mermod>
+</li>
+<li>mlist2vec() vec2mlist() vec2STlist() sdcor2cov() cov2sdcor() Vv_to_Cv() Sv_to_Cv() Cv_to_Vv() Cv_to_Sv() - Convert between representations of (co-)variance structures</li>
+<li>VerbAgg - Verbal Aggression item responses</li>
+</ul>
+</div>
+<div class="section level3">
+<h3 id="simple-example-usage-lmer-for-linear-mixed-effects-model">Simple Example Usage: lmer for linear mixed-effects model<a class="anchor" aria-label="anchor" href="#simple-example-usage-lmer-for-linear-mixed-effects-model"></a>
+</h3>
+<div class="sourceCode" id="cb1"><pre class="downlit sourceCode r">
+<code class="sourceCode R"><span><span class="co"># Install and load the lme4 package</span></span>
+<span><span class="co"># install.packages("lme4")</span></span>
+<span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://github.com/lme4/lme4/" class="external-link">lme4</a></span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># Generate some example data</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/Random.html" class="external-link">set.seed</a></span><span class="op">(</span><span class="fl">123</span><span class="op">)</span></span>
+<span><span class="va">data</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/data.frame.html" class="external-link">data.frame</a></span><span class="op">(</span></span>
+<span>  Group <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/rep.html" class="external-link">rep</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"A"</span>, <span class="st">"B"</span><span class="op">)</span>, each <span class="op">=</span> <span class="fl">5</span><span class="op">)</span>,</span>
+<span>  Score <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/stats/Normal.html" class="external-link">rnorm</a></span><span class="op">(</span><span class="fl">10</span><span class="op">)</span>,</span>
+<span>  Subject <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/factor.html" class="external-link">factor</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/rep.html" class="external-link">rep</a></span><span class="op">(</span><span class="fl">1</span><span class="op">:</span><span class="fl">5</span>, <span class="fl">2</span><span class="op">)</span><span class="op">)</span></span>
+<span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># Fit a linear mixed-effects model</span></span>
+<span><span class="va">model</span> <span class="op">&lt;-</span> <span class="fu"><a href="reference/lmer.html">lmer</a></span><span class="op">(</span><span class="va">Score</span> <span class="op">~</span> <span class="va">Group</span> <span class="op">+</span> <span class="op">(</span><span class="fl">1</span> <span class="op">|</span> <span class="va">Subject</span><span class="op">)</span>, data <span class="op">=</span> <span class="va">data</span><span class="op">)</span></span>
+<span></span>
+<span><span class="co"># Print the model summary</span></span>
+<span><span class="fu"><a href="https://rdrr.io/r/base/summary.html" class="external-link">summary</a></span><span class="op">(</span><span class="va">model</span><span class="op">)</span></span></code></pre></div>
 <!-- badges: start -->
 
+</div>
+</div>
 <div class="section level2">
 <h2 id="recentrelease-notes">Recent/release notes<a class="anchor" aria-label="anchor" href="#recentrelease-notes"></a>
 </h2>

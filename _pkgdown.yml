@@ -2,4 +2,9 @@ url: ~
 template:
   bootstrap: 5
   bootswatch: journal
-
+  bslib:
+    base_font: {google: "Roboto"}
+    heading_font: {google: "Roboto Slab"}
+    code_font: {google: "JetBrains Mono"}
+    bg: "#FFFFED"
+    fg: "#00008B"

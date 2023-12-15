@@ -4,7 +4,7 @@
   preparations from each of 6 different batchs of an
   intermediate product (H-acid).  The Dyestuff2 data
   were generated data in the same structure but with a
-  large residual variance relative to the batch variance."><title>Yield of dyestuff by batch — Dyestuff • lme4</title><script src="../deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><link href="../deps/bootstrap-5.2.2/bootstrap.min.css" rel="stylesheet"><script src="../deps/bootstrap-5.2.2/bootstrap.bundle.min.js"></script><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous"><!-- bootstrap-toc --><script src="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@v1.0.1/dist/bootstrap-toc.min.js" integrity="sha256-4veVQbu7//Lk5TSmc7YV48MxtMy98e26cf5MrgZYnwo=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- search --><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- pkgdown --><script src="../pkgdown.js"></script><meta property="og:title" content="Yield of dyestuff by batch — Dyestuff"><meta property="og:description" content="The Dyestuff data frame provides the yield of
+  large residual variance relative to the batch variance."><title>Yield of dyestuff by batch — Dyestuff • lme4</title><script src="../deps/jquery-3.6.0/jquery-3.6.0.min.js"></script><meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"><link href="../deps/bootstrap-5.2.2/bootstrap.min.css" rel="stylesheet"><script src="../deps/bootstrap-5.2.2/bootstrap.bundle.min.js"></script><link href="../deps/Roboto-0.4.5/font.css" rel="stylesheet"><link href="../deps/JetBrains_Mono-0.4.5/font.css" rel="stylesheet"><link href="../deps/Roboto_Slab-0.4.5/font.css" rel="stylesheet"><!-- Font Awesome icons --><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css" integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/v4-shims.min.css" integrity="sha256-wZjR52fzng1pJHwx4aV2AO3yyTOXrcDW7jBpJtTwVxw=" crossorigin="anonymous"><!-- bootstrap-toc --><script src="https://cdn.jsdelivr.net/gh/afeld/bootstrap-toc@v1.0.1/dist/bootstrap-toc.min.js" integrity="sha256-4veVQbu7//Lk5TSmc7YV48MxtMy98e26cf5MrgZYnwo=" crossorigin="anonymous"></script><!-- headroom.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/headroom.min.js" integrity="sha256-AsUX4SJE1+yuDu5+mAVzJbuYNPHj/WroHuZ8Ir/CkE0=" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/headroom/0.11.0/jQuery.headroom.min.js" integrity="sha256-ZX/yNShbjqsohH1k95liqY9Gd8uOiE1S4vZc+9KQ1K4=" crossorigin="anonymous"></script><!-- clipboard.js --><script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.6/clipboard.min.js" integrity="sha256-inc5kl9MA1hkeYUt+EC3BhlIgyp/2jDIyBLS6k3UxPI=" crossorigin="anonymous"></script><!-- search --><script src="https://cdnjs.cloudflare.com/ajax/libs/fuse.js/6.4.6/fuse.js" integrity="sha512-zv6Ywkjyktsohkbp9bb45V6tEMoWhzFzXis+LrMehmJZZSys19Yxf1dopHx7WzIKxr5tK2dVcYmaCk2uqdjF4A==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/autocomplete.js/0.38.0/autocomplete.jquery.min.js" integrity="sha512-GU9ayf+66Xx2TmpxqJpliWbT5PiGYxpaG8rfnBEk1LL8l1KGkRShhngwdXK1UgqhAzWpZHSiYPc09/NwDQIGyg==" crossorigin="anonymous"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/mark.js/8.11.1/mark.min.js" integrity="sha512-5CYOlHXGh6QpOFA/TeTylKLWfB3ftPsde7AnmhuitiTX4K5SqCLBeKro6sPS8ilsz1Q4NRx3v8Ko2IBiszzdww==" crossorigin="anonymous"></script><!-- pkgdown --><script src="../pkgdown.js"></script><meta property="og:title" content="Yield of dyestuff by batch — Dyestuff"><meta property="og:description" content="The Dyestuff data frame provides the yield of
   dyestuff (Naphthalene Black 12B) from 5 different
   preparations from each of 6 different batchs of an
   intermediate product (H-acid).  The Dyestuff2 data
@@ -34,6 +34,7 @@
 <li class="nav-item dropdown">
   <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" role="button" aria-expanded="false" aria-haspopup="true" id="dropdown-articles">Articles</a>
   <div class="dropdown-menu" aria-labelledby="dropdown-articles">
+    <a class="dropdown-item" href="../articles/exampleanalysis.html">Example Analysis</a>
     <a class="dropdown-item" href="../articles/lmerperf.html">lme4 performance tips</a>
   </div>
 </li>
@@ -116,11 +117,11 @@
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
     <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span> <span class="co"># useful for the lme4-authors --- development, debugging, etc:</span></span></span>
 <span class="r-in"><span> <span class="fu"><a href="https://rdrr.io/r/base/commandArgs.html" class="external-link">commandArgs</a></span><span class="op">(</span><span class="op">)</span><span class="op">[</span><span class="op">-</span><span class="fl">1</span><span class="op">]</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "--slave"                                                                  </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [2] "--no-save"                                                                </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [3] "--no-restore"                                                             </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [4] "-f"                                                                       </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [5] "C:\\Users\\alepi\\AppData\\Local\\Temp\\RtmpAHXHT5\\callr-scr-378467c7c09"</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "--slave"                                                                   </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [2] "--no-save"                                                                 </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [3] "--no-restore"                                                              </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [4] "-f"                                                                        </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [5] "C:\\Users\\alepi\\AppData\\Local\\Temp\\RtmpUXhDQ5\\callr-scr-514012146551"</span>
 <span class="r-in"><span> <span class="kw">if</span><span class="op">(</span><span class="cn">FALSE</span><span class="op">)</span> <span class="co">## R environment variables:</span></span></span>
 <span class="r-in"><span> <span class="fu"><a href="https://rdrr.io/r/base/eval.html" class="external-link">local</a></span><span class="op">(</span><span class="op">{</span> <span class="va">ne</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/names.html" class="external-link">names</a></span><span class="op">(</span><span class="va">e</span> <span class="op">&lt;-</span> <span class="fu"><a href="https://rdrr.io/r/base/Sys.getenv.html" class="external-link">Sys.getenv</a></span><span class="op">(</span><span class="op">)</span><span class="op">)</span></span></span>
 <span class="r-in"><span>         <span class="fu"><a href="https://rdrr.io/r/base/list.html" class="external-link">list</a></span><span class="op">(</span>R    <span class="op">=</span> <span class="va">e</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/r/base/grep.html" class="external-link">grep</a></span><span class="op">(</span><span class="st">"^R"</span>, <span class="va">ne</span><span class="op">)</span><span class="op">]</span>,</span></span>
@@ -136,7 +137,7 @@
 <span class="r-in"><span> <span class="fu"><a href="https://rdrr.io/r/base/cat.html" class="external-link">cat</a></span><span class="op">(</span><span class="st">"and extra(:= not in R_LIBS) .libPaths():\n"</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> and extra(:= not in R_LIBS) .libPaths():</span>
 <span class="r-in"><span> <span class="fu"><a href="https://rdrr.io/r/base/libPaths.html" class="external-link">.libPaths</a></span><span class="op">(</span><span class="op">)</span><span class="op">[</span><span class="fu"><a href="https://rdrr.io/r/base/NA.html" class="external-link">is.na</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/match.html" class="external-link">match</a></span><span class="op">(</span><span class="fu"><a href="https://rdrr.io/r/base/libPaths.html" class="external-link">.libPaths</a></span><span class="op">(</span><span class="op">)</span>, <span class="va">nRL</span><span class="op">)</span><span class="op">)</span><span class="op">]</span></span></span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "C:/Users/alepi/AppData/Local/Temp/RtmpAHXHT5/temp_libpath37841caf1a5f"</span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [1] "C:/Users/alepi/AppData/Local/Temp/RtmpUXhDQ5/temp_libpath5140467e7c26"</span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [2] "C:/Users/alepi/AppData/Local/R/win-library/4.2"                       </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> [3] "C:/Program Files/R/R-4.2.2/library"                                   </span>
 <span class="r-in"><span></span></span>
@@ -168,34 +169,34 @@
 <span class="r-out co"><span class="r-pr">#&gt;</span> [1] pbkrtest_0.5.2  lattice_0.20-45 lme4_1.1-31     Matrix_1.5-1   </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span> loaded via a namespace (and not attached):</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [1] httr_1.4.4          tidyr_1.3.0         sass_0.4.5         </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [4] pkgload_1.3.2       jsonlite_1.8.4      splines_4.2.2      </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span>  [7] bslib_0.4.2         shiny_1.7.4         yaml_2.3.7         </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [10] remotes_2.4.2.1     sessioninfo_1.2.2   numDeriv_2016.8-1.1</span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [13] backports_1.4.1     pillar_1.8.1        glue_1.6.2         </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [16] digest_0.6.31       promises_1.2.0.1    minqa_1.2.5        </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [19] htmltools_0.5.7     httpuv_1.6.9        pkgconfig_2.0.3    </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [22] devtools_2.4.5      broom_1.0.3         purrr_1.0.1        </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [25] xtable_1.8-4        processx_3.8.0      whisker_0.4.1      </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [28] later_1.3.0         downlit_0.4.3       tibble_3.1.8       </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [31] generics_0.1.3      usethis_2.2.2       ellipsis_0.3.2     </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [34] cachem_1.0.6        withr_2.5.0         cli_3.6.0          </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [37] magrittr_2.0.3      crayon_1.5.2        mime_0.12          </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [40] memoise_2.0.1       evaluate_0.20       ps_1.7.2           </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [43] fs_1.6.1            fansi_1.0.4         nlme_3.1-160       </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [46] MASS_7.3-60         xml2_1.3.3          pkgbuild_1.4.0     </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [49] textshaping_0.3.7   profvis_0.3.8       tools_4.2.2        </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [52] prettyunits_1.1.1   lifecycle_1.0.3     stringr_1.5.0      </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [55] callr_3.7.3         compiler_4.2.2      pkgdown_2.0.7      </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [58] jquerylib_0.1.4     systemfonts_1.0.5   rlang_1.1.2        </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [61] grid_4.2.2          nloptr_2.0.3        rstudioapi_0.14    </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [64] htmlwidgets_1.6.3   miniUI_0.1.1.1      rmarkdown_2.20     </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [67] boot_1.3-28         curl_5.1.0          R6_2.5.1           </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [70] knitr_1.42          dplyr_1.1.0         fastmap_1.1.0      </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [73] utf8_1.2.3          rprojroot_2.0.3     ragg_1.2.6         </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [76] desc_1.4.2          stringi_1.7.12      parallel_4.2.2     </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [79] Rcpp_1.0.10         vctrs_0.6.4         tidyselect_1.2.0   </span>
-<span class="r-out co"><span class="r-pr">#&gt;</span> [82] xfun_0.37           urlchecker_1.0.1   </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [1] Rcpp_1.0.10         tidyr_1.3.0         prettyunits_1.1.1  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [4] ps_1.7.2            rprojroot_2.0.3     digest_0.6.31      </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span>  [7] utf8_1.2.3          mime_0.12           R6_2.5.1           </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [10] backports_1.4.1     evaluate_0.20       httr_1.4.4         </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [13] pillar_1.9.0        rlang_1.1.2         curl_5.1.0         </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [16] rstudioapi_0.14     minqa_1.2.5         miniUI_0.1.1.1     </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [19] whisker_0.4.1       callr_3.7.3         nloptr_2.0.3       </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [22] jquerylib_0.1.4     urlchecker_1.0.1    rmarkdown_2.20     </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [25] pkgdown_2.0.7       textshaping_0.3.7   desc_1.4.2         </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [28] devtools_2.4.5      splines_4.2.2       stringr_1.5.0      </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [31] htmlwidgets_1.6.3   broom_1.0.5         shiny_1.7.4        </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [34] numDeriv_2016.8-1.1 compiler_4.2.2      httpuv_1.6.9       </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [37] xfun_0.37           pkgconfig_2.0.3     systemfonts_1.0.5  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [40] pkgbuild_1.4.0      htmltools_0.5.7     tidyselect_1.2.0   </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [43] downlit_0.4.3       tibble_3.1.8        fansi_1.0.4        </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [46] dplyr_1.1.0         crayon_1.5.2        withr_2.5.0        </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [49] later_1.3.0         MASS_7.3-60         grid_4.2.2         </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [52] nlme_3.1-160        jsonlite_1.8.4      xtable_1.8-4       </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [55] lifecycle_1.0.3     magrittr_2.0.3      cli_3.6.0          </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [58] stringi_1.7.12      cachem_1.0.6        fs_1.6.1           </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [61] promises_1.2.0.1    remotes_2.4.2.1     xml2_1.3.3         </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [64] bslib_0.4.2         generics_0.1.3      ellipsis_0.3.2     </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [67] ragg_1.2.6          vctrs_0.6.4         boot_1.3-28        </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [70] tools_4.2.2         glue_1.6.2          purrr_1.0.1        </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [73] parallel_4.2.2      processx_3.8.0      pkgload_1.3.2      </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [76] fastmap_1.1.0       yaml_2.3.7          sessioninfo_1.2.2  </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [79] memoise_2.0.1       knitr_1.42          profvis_0.3.8      </span>
+<span class="r-out co"><span class="r-pr">#&gt;</span> [82] sass_0.4.5          usethis_2.2.2      </span>
 <span class="r-in"><span> <span class="fu"><a href="https://rdrr.io/r/base/search.html" class="external-link">searchpaths</a></span><span class="op">(</span><span class="op">)</span></span></span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  [1] ".GlobalEnv"                                             </span>
 <span class="r-out co"><span class="r-pr">#&gt;</span>  [2] "C:/Users/alepi/AppData/Local/R/win-library/4.2/pbkrtest"</span>
