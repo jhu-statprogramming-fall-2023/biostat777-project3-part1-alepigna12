@@ -4,5 +4,12 @@ pkgdown_sha: ~
 articles:
   exampleanalysis: exampleanalysis.html
   lmerperf: lmerperf.html
+template:
+  bslib:
+    base_font: {google: "Roboto"}
+    heading_font: {google: "Roboto Slab"}
+    code_font: {google: "JetBrains Mono"}
+    bg: "#FFFFED"
+    fg: "#00008B"
 last_built: 2023-12-15T04:20Z
 
